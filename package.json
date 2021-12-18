@@ -1,0 +1,19 @@
+{
+  "name": "vue-ionic-template",
+  "version": "1.0.0",
+  "description": "A starter template for projects with ionic-vue with linting, formatter etc pre-configured.",
+  "main": "main.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/srav001/vue-ionic-template.git"
+  },
+  "author": "Sravan Suresh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/srav001/vue-ionic-template/issues"
+  },
+  "homepage": "https://github.com/srav001/vue-ionic-template#readme"
+}
