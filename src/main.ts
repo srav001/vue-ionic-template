@@ -1,5 +1,5 @@
-import { createApp } from 'vue'
-import App from './App.vue'
+import { createApp } from 'vue';
+import App from './App.vue';
 import router from './router';
 
 import { IonicVue } from '@ionic/vue';
@@ -12,8 +12,14 @@ import '@ionic/vue/css/normalize.css';
 import '@ionic/vue/css/structure.css';
 import '@ionic/vue/css/typography.css';
 
+/* Import the bootstrap grid system */
+import 'bootstrap/dist/css/bootstrap-grid.min.css';
+
 /* Theme variables */
 import './theme/variables.css';
+
+/* Import the tailwaind files */
+import '../index.css';
 
 const app = createApp(App)
     .use(IonicVue)
