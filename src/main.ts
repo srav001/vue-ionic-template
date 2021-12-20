@@ -1,5 +1,9 @@
 import { createApp } from 'vue';
+
+import { createPinia } from 'pinia';
+
 import { IonicVue } from '@ionic/vue';
+
 import App from './App.vue';
 // eslint-disable-next-line
 import router from './router';
@@ -22,6 +26,7 @@ import './theme/variables.css';
 import '../index.css';
 
 const app = createApp(App)
+    .use(createPinia())
     .use(IonicVue)
     .use(router);
 

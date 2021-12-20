@@ -11,7 +11,7 @@
         <ion-content class="text-center">
             <h1 class="text-center mt-3">Routing Works !</h1>
 
-            <ion-modal :is-open="modalIsOpen" @didDismiss="modalIsOpen = false">
+            <ion-modal :is-open="modalIsOpen" @did-dismiss="modalIsOpen = false">
                 <about-modal @on-close="modalIsOpen = false" />
             </ion-modal>
             <ion-button class="mt-3" @click="showModal()">Open Modal</ion-button>
