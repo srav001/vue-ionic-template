@@ -12,6 +12,7 @@ module.exports = {
     rules: {
         'no-console': process.env.NODE_ENV === 'production' ? 'off' : 'warn',
         'no-debugger': 'off',
+        'vue/no-deprecated-slot-attribute': 'off'
     },
     parserOptions: {
         parser: "@typescript-eslint/parser"

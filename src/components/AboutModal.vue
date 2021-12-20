@@ -2,7 +2,7 @@
     <ion-header>
         <ion-toolbar class="px-1">
             <ion-buttons slot="end">
-                <ion-button @click="$emit('onClose')">&#10005;</ion-button>
+                <ion-button @click="$emit('on-close')">&#10005;</ion-button>
             </ion-buttons>
             <ion-title>About Modal</ion-title>
         </ion-toolbar>
