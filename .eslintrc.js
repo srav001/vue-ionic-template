@@ -12,9 +12,14 @@ module.exports = {
     rules: {
         'no-console': process.env.NODE_ENV === 'production' ? 'off' : 'warn',
         'no-debugger': 'off',
-        'vue/no-deprecated-slot-attribute': 'off'
+        'vue/no-deprecated-slot-attribute': 'off',
+        "import/extensions": [ 2, {
+            'js': "always",
+            'vue': "always",
+            'ts': "never",
+          }],
     },
     parserOptions: {
         parser: "@typescript-eslint/parser"
-    }
-}
+    },
+};

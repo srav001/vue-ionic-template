@@ -7,9 +7,12 @@
         "dev": "vite",
         "build": "vue-tsc --noEmit && vite build",
         "preview": "vite preview",
-        "lint": "eslint --ext .js,.vue --ignore-path .gitignore --fix src",
+        
         "test": "echo \"Error: no test specified\" && exit 1",
-        "prepare": "husky install"
+
+        "setup": "npm i && npx husky install",
+        "format": "npx prettier --write --config ./.prettierrc.js src",
+        "lint": "eslint --ext .js,.ts,.vue --ignore-path .gitignore --fix src"
     },
     "repository": {
         "type": "git",
@@ -47,8 +50,10 @@
         "eslint": "^8.5.0",
         "eslint-config-prettier": "^8.3.0",
         "eslint-plugin-vue": "^8.2.0",
+        "eslint-plugin-vuejs-accessibility": "^1.1.1",
         "husky": "^7.0.0",
         "postcss": "^8.4.5",
+        "prettier": "^2.5.1",
         "tailwindcss": "^3.0.7",
         "vite": "^2.7.2",
         "vue-tsc": "^0.29.8"

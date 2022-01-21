@@ -11,7 +11,14 @@
         "lib": [
             "esnext",
             "dom"
-        ]
+        ],
+        "baseUrl": "./src",
+        "paths": {
+            "assets/*": ["/assets/*"],
+            "components/*": ["/components/*"],
+            "core/*": ["/core/*"],
+            "views/*": ["/views/*"]
+        }
     },
     "include": [
         "src/**/*.ts",

@@ -1,11 +1,35 @@
+<script setup lang="ts">
+/* eslint import/no-unresolved: [2, { ignore: ['\.vue$'] }] */
+
+import { reactive } from 'vue';
+
+import { storeToRefs } from 'pinia';
+
+import { IonButton, IonCard, IonCardHeader, IonCardSubtitle, IonCardContent } from '@ionic/vue';
+
+import BaseView from 'core/BaseView.vue';
+
+// eslint-disable-next-line
+import useStore from '../stores/main';
+
+const mainStore = useStore();
+
+const { welcomeText } = storeToRefs(mainStore);
+// If you do not want to use 'welcomeText.value', wrap it in a reactive object.
+// It can be easier for people migrating from vue 2.
+const data = reactive({
+    introductionText: welcomeText.value,
+});
+
+if (data.introductionText === welcomeText.value) console.log(data.introductionText);
+</script>
+
 <template>
-    <ion-page>
-        <ion-header>
-            <ion-toolbar>
-                <ion-title class="text-center">Home Page</ion-title>
-            </ion-toolbar>
-        </ion-header>
-        <ion-content>
+    <base-view id="home-page">
+        <template #default-view-title>
+            <div class="text-center">Home Page</div>
+        </template>
+        <template #default-view-body>
             <div class="row welcome-page">
                 <ion-card class="col-xl-4 col-lg-5 col-md-5 col-sm-6 col-12">
                     <ion-card-header>
@@ -19,44 +43,10 @@
                     </ion-card-content>
                 </ion-card>
             </div>
-        </ion-content>
-    </ion-page>
+        </template>
+    </base-view>
 </template>
 
-<script setup lang="ts">
-import { reactive } from 'vue';
-
-import { storeToRefs } from 'pinia';
-
-import {
-    IonContent,
-    IonButton,
-    IonPage,
-    IonHeader,
-    IonTitle,
-    IonToolbar,
-    IonCard,
-    IonCardHeader,
-    IonCardSubtitle,
-    IonCardContent
-} from "@ionic/vue";
-// eslint-disable-next-line
-import useStore from "../stores/main";
-
-const mainStore = useStore();
-
-const { welcomeText } = storeToRefs(mainStore);
-// If you do not want to use 'welcome.value' use a reactive object can easier for people migrating for vue 2
-const data = reactive({
-    introductionText: welcomeText.value
-});
-
-if (data.introductionText === welcomeText.value) {
-    console.log(data.introductionText);
-}
-
-</script>
-
 <style lang="postcss">
-    @import './views.css'
+@import '../assets/views.css';
 </style>
