@@ -7,11 +7,7 @@
             <ion-title>About Modal</ion-title>
         </ion-toolbar>
     </ion-header>
-    <ion-content class="ion-padding text-center">
+    <ion-content class="p-2 text-center">
         <h1 class="p-3">Hey, modal works :D</h1>
     </ion-content>
 </template>
-
-<script setup lang="ts">
-</script>
-
