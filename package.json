@@ -7,10 +7,8 @@
         "dev": "vite",
         "build": "vue-tsc --noEmit && vite build",
         "preview": "vite preview",
-        
         "test": "echo \"Error: no test specified\" && exit 1",
-
-        "setup": "npm i && npx husky install",
+        "setup": "npm i && npx husky install && npx husky add .husky/commit-msg 'npx --no -- commitlint --verbose --edit $1' ",
         "format": "npx prettier --write --config ./.prettierrc.js src",
         "lint": "eslint --ext .js,.ts,.vue --ignore-path .gitignore --fix src"
     },
