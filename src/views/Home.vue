@@ -1,5 +1,4 @@
 <script setup lang="ts">
-/* eslint import/no-unresolved: [2, { ignore: ['\.vue$'] }] */
 
 import { reactive } from 'vue';
 
@@ -9,7 +8,6 @@ import { IonButton, IonCard, IonCardHeader, IonCardSubtitle, IonCardContent } fr
 
 import BaseView from 'core/BaseView.vue';
 
-// eslint-disable-next-line
 import useStore from '../stores/main';
 
 const mainStore = useStore();
@@ -21,6 +19,7 @@ const data = reactive({
     introductionText: welcomeText.value,
 });
 
+// eslint-disable-next-line no-console
 if (data.introductionText === welcomeText.value) console.log(data.introductionText);
 </script>
 

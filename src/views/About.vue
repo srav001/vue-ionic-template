@@ -18,7 +18,6 @@
 </template>
 
 <script setup lang="ts">
-/* eslint import/no-unresolved: [2, { ignore: ['\.vue$'] }] */
 
 import { ref } from 'vue';
 
