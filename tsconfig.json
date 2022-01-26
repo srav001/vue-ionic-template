@@ -12,12 +12,12 @@
             "esnext",
             "dom"
         ],
-        "baseUrl": "./src",
+        "baseUrl": "./src/",
         "paths": {
-            "assets/*": ["/assets/*"],
-            "components/*": ["/components/*"],
-            "core/*": ["/core/*"],
-            "views/*": ["/views/*"]
+            "assets/*": ["assets/*"],
+            "components/*": ["components/*"],
+            "core/*": ["core/*"],
+            "views/*": ["views/*"]
         }
     },
     "include": [

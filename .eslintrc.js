@@ -19,6 +19,11 @@ module.exports = {
             'ts': "never",
           }],
     },
+    settings: {
+        'import/resolver': {
+            'typescript': {}
+        },
+    },
     parserOptions: {
         parser: "@typescript-eslint/parser"
     },
