@@ -20,6 +20,7 @@ When there are more than 1 person working on project, maintaining a structure or
 
 -   You might don't want to go through the hassle of setting up linter, formatter, router, store etc and still want the [latest vue](https://twitter.com/youyuxi/status/1464058813649088516?lang=en) has to offer ( All of it is setup ).
 -   If you use the ionic components as your base for components, in future you can build your web app as an android or ios app with capacitor.
+-   You can remove - all capacitor dependencies from `package.json` and `capacitor.config.js` to get all other features except build a mobile app.
 -   Husky is setup and is being used for commit linting.
 -   Eslint for linting and prettier for formatting files.
 -   Vite is used for superior dev experience..
@@ -28,14 +29,14 @@ When there are more than 1 person working on project, maintaining a structure or
 
 Note:
 
-> This project should be updated yearly, updating all dependencies to the latest version and maybe even replace some tech for newer and better ones or remove deprecated ones.
+> This project will be updated bi-yearly, updating all dependencies to the latest version and maybe even replace some tech for newer and better ones or remove deprecated ones.
 
 -   ` Examples are included for the most common ones and rest is left for developer decision.`
 
 ## Custom Scripts:
 
 ```
-pnpm project-setup: 'Runs pnpm and setups up husky for commit linting'
+pnpm project-setup: 'Runs pnpm install and setups up husky for commit linting'
 pnpm lint: 'Runs eslint in src directory and fixes all autofixeable errors'
 pnpm format: 'Runs src directory through prettier and formats all files and'
 ```
