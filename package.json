@@ -8,7 +8,7 @@
         "build": "vue-tsc --noEmit && vite build",
         "preview": "vite preview",
         "test": "echo \"Error: no test specified\" && exit 1",
-        "setup": "npm i && npx husky install && npx husky add .husky/commit-msg 'npx --no -- commitlint --verbose --edit $1' ",
+        "project-setup": "pnpm install && rm -rf .husky && npx husky install && npx husky add .husky/commit-msg 'npx --no -- commitlint --verbose --edit $1' ",
         "format": "npx prettier --write --config ./.prettierrc.js src",
         "lint": "eslint --ext .js,.ts,.vue --ignore-path .gitignore --fix src"
     },
@@ -51,7 +51,6 @@
         "eslint-plugin-vue": "^9.1.1",
         "eslint-plugin-vuejs-accessibility": "^1.2.0",
         "husky": "^8.0.1",
-        "npm-check-updates": "^15.0.1",
         "postcss": "^8.4.14",
         "prettier": "^2.7.1",
         "tailwindcss": "^3.1.4",
