@@ -1,19 +1,29 @@
-// eslint-disable-next-line import/no-extraneous-dependencies
+/* eslint-disable import/no-extraneous-dependencies */
 import { defineConfig } from 'vite';
-// eslint-disable-next-line import/no-extraneous-dependencies
-import vue from '@vitejs/plugin-vue';
 
-import path from "path";
+import vue from '@vitejs/plugin-vue';
+import Pages from 'vite-plugin-pages';
+
+import Unocss from 'unocss/vite';
+import transformerDirective from '@unocss/transformer-directives';
+
+import path from 'path';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-    plugins: [vue()],
+    plugins: [
+        vue(),
+        Pages(),
+        Unocss({
+            transformers: [transformerDirective()],
+        }),
+    ],
     resolve: {
         alias: {
-          "@": path.resolve(__dirname, "./src"),
-          "components": path.resolve(__dirname, "./src/components"),
-          "core": path.resolve(__dirname, "./src/core"),
-          "views": path.resolve(__dirname, "./src/views"),
+            '@': path.resolve(__dirname, './src'),
+            components: path.resolve(__dirname, './src/components'),
+            core: path.resolve(__dirname, './src/core'),
+            pages: path.resolve(__dirname, './src/pages'),
         },
-      },
-})
+    },
+});

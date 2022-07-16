@@ -17,12 +17,11 @@
             "assets/*": ["assets/*"],
             "components/*": ["components/*"],
             "core/*": ["core/*"],
-            "views/*": ["views/*"]
+            "pages/*": ["pages/*"]
         }
     },
     "include": [
         "src/**/*.ts",
-        "src/**/**/*.ts",
         "src/**/*.d.ts",
         "src/**/*.tsx",
         "src/**/*.vue"

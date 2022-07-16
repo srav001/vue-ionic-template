@@ -1,3 +1,15 @@
+<script setup lang="ts">
+import { ref } from 'vue';
+
+import { IonButton, IonModal } from '@ionic/vue';
+
+import AboutComponent from 'components/about/AboutComponent.vue';
+
+const modalIsOpen = ref(false);
+const showModal = () => {
+    modalIsOpen.value = true;
+};
+</script>
 <template>
     <base-view>
         <template #default-view-title>
@@ -16,19 +28,3 @@
         </template>
     </base-view>
 </template>
-
-<script setup lang="ts">
-
-import { ref } from 'vue';
-
-import { IonButton, IonModal } from '@ionic/vue';
-
-import BaseView from 'core/BaseView.vue';
-
-import AboutComponent from 'components/about/AboutComponent.vue';
-
-const modalIsOpen = ref(false);
-const showModal = () => {
-    modalIsOpen.value = true;
-};
-</script>
