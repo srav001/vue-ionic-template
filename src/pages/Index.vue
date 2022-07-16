@@ -1,12 +1,9 @@
 <script setup lang="ts">
-
 import { reactive } from 'vue';
 
 import { storeToRefs } from 'pinia';
 
 import { IonButton, IonCard, IonCardHeader, IonCardSubtitle, IonCardContent } from '@ionic/vue';
-
-import BaseView from 'core/BaseView.vue';
 
 import useStore from '../stores/main';
 
@@ -45,7 +42,3 @@ if (data.introductionText === welcomeText.value) console.log(data.introductionTe
         </template>
     </base-view>
 </template>
-
-<style lang="postcss">
-@import '../assets/views.css';
-</style>
