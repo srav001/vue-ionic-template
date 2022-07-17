@@ -15,7 +15,7 @@ UnoCSS is awesome, since it's on-demand ( it offers low bundle size ) while prov
 ## Why use this template ?
 
 -   You might don't want to go through the hassle of setting up linter, formatter, router, store etc and still want the [latest vue](https://twitter.com/youyuxi/status/1464058813649088516?lang=en) has to offer ( All of it is setup ).
--   If you use the ionic components as your base for components, in future you can build your web app as an android or ios app with capacitor ( I feel it is better for mobile than other vue components library).
+-   If you use the ionic components as your base for components, in future you can build your web app as an android or ios app with capacitor ( I feel it is better for mobile than other vue component libraries).
 -   You can remove - all capacitor dependencies from `package.json` and `capacitor.config.js` to get all other features except build a mobile app.
 -   Eslint for linting and prettier for formatting files ( and yes both work combined without issues ).
 -   Husky is setup and is being used for commit linting.
