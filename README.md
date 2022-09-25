@@ -1,4 +1,4 @@
-# A Important Update
+# An Important Update
 > This project will not be updated anymore in favour of the newer [Cross Vue](https://github.com/srav001/cross-vue) template which has all the features of this template, while offering more easier dev experience and support for [Tauri](https://https://tauri.app).
 
 ## Check Out the New Template: https://github.com/srav001/cross-vue
