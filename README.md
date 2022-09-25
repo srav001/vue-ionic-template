@@ -1,7 +1,7 @@
-# An Important Update
-> This project will not be updated anymore in favour of the newer [Cross Vue](https://github.com/srav001/cross-vue) template which has all the features of this template, while offering more easier dev experience and support for [Tauri](https://https://tauri.app).
+# An Important Update ❗
+> This project will not be updated ⚠️ anymore in favour of the newer [Cross Vue](https://github.com/srav001/cross-vue) ❤️ template which has all the features of this template, while offering more easier dev experience 😍 and support for [Tauri](https://https://tauri.app) 🤩.
 
-## Check Out the New Template: https://github.com/srav001/cross-vue
+## Check Out the New Template ❤️: https://github.com/srav001/cross-vue
 
  This is a starter template aimed to be used at apps that will go into production release. It has eslint, prettier and ionic added to it, so that not only does linting and formatting like most projects but also can be made a mobile app when needed with capacitor. It is opinionated to an extend, but at the same time easy to customize since it has minimal config for all packages.  
 
