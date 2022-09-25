@@ -1,16 +1,16 @@
-# A Production Ready Starter Template
+# A Important Update
+> This project will not be updated anymore in favour of newer template which has all the features of this template, while offering more easier dev experience and support for [Tauri](https://https://tauri.app).
 
-Well I think the title says it all. This is a starter template aimed to be used at apps that will go into production release. It has eslint, prettier and ionic added to it, so that not only does linting and formatting like most projects but also can be made a mobile app when needed with capacitor. It is opinionated to an extend, but at the same time easy to customize since it has minimal config for all packages.  
+## Check Out the New Template: https://github.com/srav001/cross-vue
 
--   `It uses the latest tech in vue ecosystem. For example pinia for store and vite for building.` [Click here for more info](https://twitter.com/youyuxi/status/1464058813649088516?lang=en)
+#
 
-## New in 1.1.0!
+ This is a starter template aimed to be used at apps that will go into production release. It has eslint, prettier and ionic added to it, so that not only does linting and formatting like most projects but also can be made a mobile app when needed with capacitor. It is opinionated to an extend, but at the same time easy to customize since it has minimal config for all packages.  
 
--   UnoCSS replaces tailwind and bootstrap packages. [Click here for more info](https://github.com/unocss/unocss)
--   Routing now works by using file system with the help of `vite-plugin-pages`. [Click here for more info](https://github.com/hannoeru/vite-plugin-pages)
 
 ### Why UnoCSS and bootstrap grid 🤔 ?
 UnoCSS is awesome, since it's on-demand ( it offers low bundle size ) while providing access to multiple css utilty class from the likes of tailwind. Bootstrap's grid is included simply because I think bootstrap's grid is most superior in terms of functionality compared to rest like bulma while being easy to use ( Can be removed by deleting file in `src/assets/bootstrap-grid.min.css`). 
+
 
 ## Why use this template ?
 
@@ -22,10 +22,6 @@ UnoCSS is awesome, since it's on-demand ( it offers low bundle size ) while prov
 -   Vite is used for superior dev experience.
 
 ###
-
-Note:
-
-> This project will be updated bi-yearly, updating all dependencies to the latest version and maybe even replace some tech for newer and better ones or remove deprecated ones.
 
 -   ` Examples are included for the most common ones and rest is left for developer decision.`
 
